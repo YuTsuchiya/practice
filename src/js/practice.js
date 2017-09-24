@@ -7,7 +7,7 @@ $(document).ready(function(){
         slidesToShow: 3,
         focusOnSelect: true,
         centerMode: true,
-        centerPadding: '40px',
+        centerPadding: '5px',
         swipeToSlide: true
     });
 });

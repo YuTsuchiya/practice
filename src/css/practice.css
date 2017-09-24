@@ -438,14 +438,8 @@
 }
 
 .practice_client_slide_nav_item {
-    width: 320px;
+    width: 400px;
     height: 240px;
-}
-
-.practice_client_slide_nav_item_text {
-    font-size: 10px;
-    color: white;
-    vertical-align: bottom;
 }
 
 .practice_business {
