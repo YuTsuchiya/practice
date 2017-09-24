@@ -7,28 +7,24 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="manifest" href="site.webmanifest">
-        <link rel="apple-touch-icon" href="icon.png">
-
         <link rel="stylesheet" href="css/practice.css">
         <link rel="stylesheet" href="css/reset.css">
 
-        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/slick.css">
 
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     </head>
     <body>
         <!--[if lte IE 9]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-    <div id="practice_header">
+    <header id="practice_header">
         <div class="practice_header-title">
             <p>クラウドソーシングなら日本最大級の「ランサーズ」</p>
         </div>
         <div class="practice_header_menu">
-            <a class="practice_header_logo" href="#"><img src="img/logo_lancers.png"></a>
+            <a href="#"><img class="practice_header_logo" src="img/logo_lancers.png"></a>
             <div class="practice_header_menu-left">
                 <ul class="practice_header_menu-left_list">
                     <li><a href="#">初めての方</a></li>
@@ -44,11 +40,11 @@
                     <li><a href="#">サイトマップ</a></li>
                     <li><a href="#">ヘルプ</a></li>
                     <li><a href="#">ログイン</a></li>
-                    <li><a href="#"><span class="button">無料会員登録</span></a></li>
+                    <li><a href="#"><span class="practice_header_menu-button">無料会員登録</span></a></li>
                 </ul>
             </div>
         </div>
-    </div>
+    </header>
     <div class="practice_main">
         <div class="practice_main_head">
             <h1>日本最大級のクラウドソーシング</h1>
@@ -165,7 +161,7 @@
                     <p class="practice_lancers_merit_description">
                         クライアント評価の可視化、電話での本人確認や機密保持確認、
                         クライアント相談窓口の整備などを行っていますので安心してオンライン上のやりとりを行うことができます。
-                        <a class="practice_lancers_merit-link" href="#"><i class="fa fa-caret-right">▶︎</i>安心への取り組み</a>
+                        <a class="practice_lancers_merit-link" href="#"><i class="fa fa-caret-right"></i>安心への取り組み</a>
                     </p>
                 </li>
             </ul>
@@ -203,8 +199,16 @@
         <section class="practice_client">
             <div class="practice_client_frame">
                 <p>ご利用企業様の声</p>
-                <div class="practice_client_slide">
-
+                <div class="practice_client_slide_nav">
+                    <div class="practice_client_slide_nav_container">
+                        <div><a href="#"><img class="practice_client_slide_nav_item" src="img/thumb_article_nanapi.png"></a></div>
+                        <div><a href="#"><img class="practice_client_slide_nav_item" src="img/thumb_article_nijigen.jpg"></a></div>
+                        <div><a href="#"><img class="practice_client_slide_nav_item" src="img/thumb_article_kddi.jpg"></a></div>
+                        <div><a href="#"><img class="practice_client_slide_nav_item" src="img/thumb_article_en.jpg"></a></div>
+                        <div><a href="#"><img class="practice_client_slide_nav_item" src="img/thumb_article_gaiax.jpg"></a></div>
+                        <div><a href="#"><img class="practice_client_slide_nav_item" src="img/thumb_article_bestteacher.jpg"></a></div>
+                        <div><a href="#"><img class="practice_client_slide_nav_item" src="img/thumb_article_freee.jpg"></a></div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -214,24 +218,30 @@
                 <div class="practice_business_list">
                     <div class="practice_business_contents">
                         <img  src="img/icn/icn_business_card.svg">
-                        <p>独立開業時の制作物を頼みたい</p>
+                        <div class="practice_business_text">
+                            <p>独立開業時の制作物を頼みたい</p>
+                        </div>
                         <a class="practice_business_link" href="#">会社の顔であるロゴ制作</a>
                         <a class="practice_business_link" href="#">名刺デザイン制作</a>
                         <a class="practice_business_link" href="#">コーポレートサイト制作</a>
                     </div>
                     <div class="practice_business_contents">
                         <img  src="img/icn/icn_business_shirt.svg">
-                        <p>販促・集客したい</p>
+                        <div class="practice_business_text">
+                            <p>販促・集客したい</p>
+                        </div>
                         <a class="practice_business_link" href="#">商品 / 店舗チラシ</a>
                         <a class="practice_business_link" href="#">サービス / 商品ページ制作</a>
                         <a class="practice_business_link" href="#">記事制作</a>
                     </div>
                     <a href="#" class="practice_business_contents practice_business_click">
                         <img  src="img/icn/icn_business_sharing.svg">
-                        <p>メディアの設計から効果検証まで
-                            <br>
-                            委託したい
-                        </p>
+                        <div class="practice_business_text">
+                            <p>メディアの設計から効果検証まで
+                                <br>
+                                委託したい
+                            </p>
+                        </div>
                         <div class="practice_business_description">
                             <p class="">コンテンツマーケティング戦略</p>
                             <p class="">コンテンツ制作</p>
@@ -243,24 +253,30 @@
                     </a>
                     <div class="practice_business_contents">
                         <img  src="img/icn/icn_business_earphones.svg">
-                        <p>ノンコア業務を切り出したい</p>
+                        <div class="practice_business_text">
+                            <p>ノンコア業務を切り出したい</p>
+                        </div>
                         <a class="practice_business_link" href="#">テープ起こし</a>
                         <a class="practice_business_link" href="#">各言語への翻訳</a>
                         <a class="practice_business_link" href="#">画像加工</a>
                     </div>
                     <div class="practice_business_contents">
                         <img  src="img/icn/icn_business_design.svg">
-                        <p>自社にない
-                            <br>
-                            クリエイティブスキルが欲しい
-                        </p>
+                        <div class="practice_business_text">
+                            <p>自社にない
+                                <br>
+                                クリエイティブスキルが欲しい
+                            </p>
+                        </div>
                         <a class="practice_business_link" href="#">デザいん制作</a>
                         <a class="practice_business_link" href="#">システム開発</a>
                         <a class="practice_business_link" href="#">CMS構築</a>
                     </div>
                     <div class="practice_business_contents">
                         <img  src="img/icn/icn_business_smartphone.svg">
-                        <p>販促・集客したい</p>
+                        <div class="practice_business_text">
+                            <p>販促・集客したい</p>
+                        </div>
                         <a class="practice_business_link" href="#">アンケート調査</a>
                         <a class="practice_business_link" href="#">データ収集・分析</a>
                         <a class="practice_business_link" href="#">覆面調査</a>
@@ -269,5 +285,13 @@
             </div>
         </section>
     </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/practice.js"></script>
+
+    <script src="js/slick.js"></script>
+    <script src="js/slick.min.js"></script>
     </body>
 </html>

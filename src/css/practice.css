@@ -2,7 +2,6 @@
 #practice_header {
     position: fixed;
     width: 100%;
-    /*height: 100%;*/
     top: auto;
     z-index: 999;
     background: white;
@@ -17,6 +16,7 @@
 }
 
 .practice_header_menu {
+    height: 50px;
     display: flex;
     justify-content: center;
     /*display: -webkit-flex;*/
@@ -26,39 +26,34 @@
     position: relative;
     padding-left: 15px;
     align-items: center;
-    height: 50px;
 }
 
 .practice_header_logo {
-    position: relative;
-}
-
-.practice_header_logo > img {
     width: 105px;
 }
 
+.practice_header_logo:hover > img {
+    filter: opacity(50%);
+}
+
 .practice_header_menu-left {
-    padding-left: 5px;
     margin-right: auto;
-    height: 100%;
 }
 
 .practice_header_menu-left_list {
-    position: relative;
-    padding-left: 5px;
+    padding-left: 10px;
     display: flex;
-    height: 100%;
 }
 
 .practice_header_menu-left_list > li {
     font-size: 12px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .practice_header_menu-left_list > li > a {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 0 10px;
     text-decoration: none;
     font-weight: bold;
@@ -69,25 +64,16 @@
     background-color: rgba(17, 174, 255, 0.15);
 }
 
-
 .practice_header_menu-right {
     margin-left: auto;
-    height: 100%;
 }
 
 .practice_header_menu-right_list {
-    position: relative;
     display: flex;
-    height: 100%;
 }
 
 .practice_header_menu-right_list > li {
     padding: 0 10px;
-    font-size: 10px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .practice_header_menu-right_list > li:hover {
@@ -95,28 +81,29 @@
 }
 
 .practice_header_menu-right_list > li > a {
-    text-decoration: none;
+    height: 50px;
+    font-size: 10px;
     color: blue;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.button {
-    padding: 15px 15px;
-    position: relative;
+.practice_header_menu-button {
+    padding: 15px;
     font-size: 11px;
     background-color: #2fbc5c;
     border-radius: 5px;
     color: #fff;
-    line-height: 52px;
-    -webkit-transition: none;
-    transition: none;
 }
 
-.button:hover {
+.practice_header_menu-button:hover {
     background-color: #6f9f42;
 }
 
 .practice_main {
-    background: url("../img/practice_bg_main.jpg") no-repeat center top scroll ;
+    padding-top: 70px;
     height: 650px;
     width: 100%;
     background-size: cover;
@@ -125,20 +112,19 @@
 }
 
 .practice_main_head {
+    background: url("../img/practice_bg_main.jpg") no-repeat center top scroll ;
     display: table-cell;
     vertical-align: middle;
     position: relative;
-    z-index: 1;
-    background: rgba(255, 255, 255, 1.0);
-    animation: bg-transparent 1.0s both;
     text-align: center;
+    line-height: 1.5;
 }
 
 .practice_main_head > h1 {
+    padding-top: 80px;
     font-weight: bold;
     font-size: 48px;
     text-shadow: 0 1px 20px rgba(255, 255, 255, 1), 0 1px 7px rgba(255, 255, 255, 1), 0 1px 3px rgba(255, 255, 255, 1);
-    line-height: 1.2;
     width: 100%;
 }
 
@@ -346,8 +332,17 @@
 
 .practice_lancers_merit-link {
     padding-top: 20px;
+    color: purple;
     font-size: 13px;
     display: block;
+}
+
+.practice_lancers_merit-link:hover {
+    text-decoration: none;
+}
+
+.practice_lancers_merit-link > i {
+    padding-right: 5px;
 }
 
 .practice_lancers_merit-icn {
@@ -435,13 +430,26 @@
 }
 
 .practice_client_slide {
+    display: none;
+}
+
+.practice_client_slide_nav {
     height: 250px;
-    width: 100%;
-    padding-top: 30px;
+}
+
+.practice_client_slide_nav_item {
+    width: 320px;
+    height: 240px;
+}
+
+.practice_client_slide_nav_item_text {
+    font-size: 10px;
+    color: white;
+    vertical-align: bottom;
 }
 
 .practice_business {
-    padding-top: 50px;
+    padding-top: 120px;
     background: rgba(220, 220, 220, 0.20);
 }
 
@@ -461,7 +469,8 @@
 }
 
 .practice_business_contents {
-    width: 49%;
+    width: 32%;
+    min-height: 410px;
     display: block;
     position: relative;
     margin-top: 20px;
@@ -469,17 +478,24 @@
     box-shadow: 0 0px 13px rgba(0, 0, 0, 0.15);
 }
 
+.practice_business_text {
+    display: table;
+    height: 80px;
+    width: 100%;
+    line-height: 1.5;
+}
+
+.practice_business_text > p {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .practice_business_contents > img {
     width: 100%;
     height: 150px;
     padding-top: 40px;
-}
-
-.practice_business_contents > p {
-    padding: 40px 0;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 1.5;
 }
 
 .practice_business_link {
