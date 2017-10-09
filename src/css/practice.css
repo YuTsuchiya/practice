@@ -9,10 +9,7 @@
 }
 
 .practice_header-title {
-    padding: 5px;
-    background-color: #0268cc;
-    font-size: 10px;
-    color: white;
+    display: none;
 }
 
 .practice_header_menu {
@@ -41,27 +38,7 @@
 }
 
 .practice_header_menu-left_list {
-    padding-left: 10px;
-    display: flex;
-}
-
-.practice_header_menu-left_list > li {
-    font-size: 12px;
-}
-
-.practice_header_menu-left_list > li > a {
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-    color: gray;
-}
-
-.practice_header_menu-left_list > li:hover {
-    background-color: rgba(17, 174, 255, 0.15);
+    display: none;
 }
 
 .practice_header_menu-right {
@@ -69,25 +46,23 @@
 }
 
 .practice_header_menu-right_list {
+    display: none;
+}
+
+.practice_header_menu-right_list-sp {
     display: flex;
 }
 
-.practice_header_menu-right_list > li {
-    padding: 0 10px;
+.practice_header_menu-right_list-sp > li > a {
+    width: 60px;
+    padding: 10px;
+    text-align: center;
 }
 
-.practice_header_menu-right_list > li:hover {
-    background-color: rgba(17, 174, 255, 0.15);
-}
-
-.practice_header_menu-right_list > li > a {
-    height: 50px;
-    font-size: 10px;
-    color: blue;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.practice_header_menu-right_list-sp > li > a > i > span {
+    display: block;
+    font-size: 11px;
+    padding-top: 10px;
 }
 
 .practice_header_menu-button {
@@ -103,8 +78,8 @@
 }
 
 .practice_main {
-    padding-top: 70px;
-    height: 650px;
+    padding-top: 50px;
+    height: 80vh;
     width: 100%;
     background-size: cover;
     display: table;
@@ -112,7 +87,8 @@
 }
 
 .practice_main_head {
-    background: url("../img/practice_bg_main.jpg") no-repeat center top scroll ;
+    background: url("../img/bg_main_sp.png") no-repeat center top scroll ;
+    background-size: auto 100%;
     display: table-cell;
     vertical-align: middle;
     position: relative;
@@ -123,15 +99,14 @@
 .practice_main_head > h1 {
     padding-top: 80px;
     font-weight: bold;
-    font-size: 48px;
+    font-size: 21px;
     text-shadow: 0 1px 20px rgba(255, 255, 255, 1), 0 1px 7px rgba(255, 255, 255, 1), 0 1px 3px rgba(255, 255, 255, 1);
     width: 100%;
 }
 
 .practice_main_head_lead {
-    padding-top: 15px;
-    font-size: 16px;
-    font-weight: bold;
+    padding: 15px 10px 0;
+    font-size: 10px;
     text-shadow: 0 1px 20px rgba(255, 255, 255, 1), 0 1px 7px rgba(255, 255, 255, 1), 0 1px 3px rgba(255, 255, 255, 1);
 }
 
@@ -142,6 +117,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.practice_main_head_button > a {
+    padding: 15px 0;
+    width: 250px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    text-decoration: none;
 }
 
 .practice_main_head-margin {
@@ -149,25 +134,14 @@
 }
 
 .practice_main_head_button-blue {
-    padding: 22px 0;
-    width: 250px;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
     background-color: #0268cc;
     color: #fff;
-    text-decoration: none;
 }
 
 .practice_main_head_button-write {
-    padding: 22px 0;
-    width: 250px;
+    margin-top: 10px;
     color: dodgerblue;
-    font-size: 15px;
-    font-weight: bold;
-    border: none;
     background-color: white;
-    text-decoration: none;
 }
 
 .practice_main_head_button-padding {
@@ -176,16 +150,13 @@
 }
 
 .practice_main_head_request {
+    margin-left: 20px;
     padding: 0 20px;
     position: absolute;
     bottom: 20px;
-    width: 100%;
 }
 
 .practice_main_head_request-column {
-    margin-left: 20px;
-    display: inline-block;
-    font-size: 36px;
     font-weight: bold;
 }
 
@@ -198,24 +169,29 @@
 }
 
 .practice_category {
-    padding: 50px 0;
+    padding: 20px 10px;
     background: royalblue;
 }
 
 .practice_category_description {
+    padding: 0 10px;
     color: white;
-    font-size: 18px;
+    font-size: 14px;
     text-align: center;
 }
 
 .practice_category_list {
-    padding-top: 30px;
+    padding-top: 10px;
     position: relative;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+}
+
+.practice_category_list > li {
+    flex: 1 50%;
 }
 
 .practice_category_list > li > a {
@@ -239,7 +215,7 @@
 }
 
 .practice_cooperation {
-    padding: 50px 15px;
+    padding: 20px 15px;
     text-align: center;
 }
 
@@ -255,37 +231,40 @@
 }
 
 .practice_lancers_system {
-    padding: 50px 0;
+    padding: 20px 0;
     margin: 0 20px;
     text-align: center;
     border: solid 5px gainsboro;
 }
 
 .practice_lancers_system_frame {
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .practice_lancers_system_something {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 12px;
 }
 
 .practice_lancers_system_concept {
     padding-top: 20px;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 1.5;
+    text-align: left;
 }
 
 .practice_lancers_system_image_frame {
-    padding: 20px 100px;
+
 }
+
 .practice_lancers_system_image {
     width: 100%;
 }
 
 .practice_lancers_system-button {
-    padding: 20px 110px;
-    width: 300px;
+    padding: 20px 50px;
+    display: inline-block;
+    margin-top: 10px;
     background: royalblue;
     color: white;
     font-size: 20px;
@@ -295,24 +274,19 @@
 }
 
 .practice_lancers_merit {
-    padding: 50px 0;
     margin: 0 10px;
 }
 
 .practice_lancers_merit_list {
-    padding: 80px 0 30px;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    align-items: center;
+    padding: 30px 0 30px;
 }
 
 .practice_lancers_merit_list > li {
-    width: 30%;
+    width: 100%;
 }
 
 .practice_lancers_merit_image_frame {
-    height: 270px;
+
 }
 
 .practice_lancers_merit_image {
@@ -320,6 +294,7 @@
 }
 
 .practice_lancers_merit_reason {
+    padding-top: 15px;
     font-size: 18px;
     font-weight: bold;
     text-align: center;
@@ -327,7 +302,8 @@
 
 .practice_lancers_merit_description {
     padding-top: 30px;
-    font-size: 15px;
+    font-size: 13px;
+    line-height: 1.5;
 }
 
 .practice_lancers_merit-link {
@@ -352,36 +328,34 @@
 }
 
 .practice_support {
-    padding: 80px 0 50px;
-    background: url("../img/bg_service.jpg") no-repeat center top scroll;
-    text-align: center;
+    padding: 20px 20px 20px;
+    background: rgba(220, 220, 220, 0.20);
 }
 
 .practice_support_title {
     padding-top: 30px;
-
+    line-height: 1.5;
+    text-align: center;
 }
 
 .practice_support_title > span {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .practice_support_frame {
-    padding: 50px 5px 30px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     z-index: 10;
 }
 
 .practice_support_list {
-    width: 45%;
+    margin-top: 20px;
+    width: 100%;
     box-shadow: 0 0px 13px rgba(0, 0, 0, 0.15);
 }
 
 .practice_support_list > img {
     width: 100%;
+    min-height: 150px;
 }
 
 .practice_support_description {
@@ -391,13 +365,18 @@
 }
 
 .practice_support_form {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .practice_support_target {
     color: red;
     font-weight: bold;
+    font-size: 15px;
+}
+
+.practice_support_adviser {
+    padding: 0 15px;
     font-size: 15px;
 }
 
@@ -434,16 +413,16 @@
 }
 
 .practice_client_slide_nav {
-    height: 250px;
+    padding-top: 20px;
 }
 
 .practice_client_slide_nav_item {
-    width: 400px;
     height: 240px;
+    width: 100%;
 }
 
 .practice_business {
-    padding-top: 120px;
+    padding-top: 40px;
     background: rgba(220, 220, 220, 0.20);
 }
 
@@ -454,7 +433,7 @@
 }
 
 .practice_business_list {
-    padding: 30px 35px 0;
+    padding: 30px 35px 20px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -463,7 +442,7 @@
 }
 
 .practice_business_contents {
-    width: 32%;
+    width: 100%;
     min-height: 410px;
     display: block;
     position: relative;
@@ -482,7 +461,7 @@
 .practice_business_text > p {
     display: table-cell;
     vertical-align: middle;
-    font-size: 18px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -539,4 +518,274 @@
 .practice_business_introduction:after {
     content: "\f08e";
     font-family: FontAwesome;
+}
+
+@media all and (min-width: 768px) {
+    .practice_header-title {
+        display: inherit;
+        padding: 5px;
+        background-color: #0268cc;
+        font-size: 10px;
+        color: white;
+    }
+
+    .practice_header_menu-left_list {
+        padding-left: 10px;
+        display: flex;
+    }
+
+    .practice_header_menu-left_list > li {
+        font-size: 12px;
+    }
+
+    .practice_header_menu-left_list > li > a {
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px;
+        text-decoration: none;
+        font-weight: bold;
+        color: gray;
+    }
+
+    .practice_header_menu-left_list > li:hover {
+        background-color: rgba(17, 174, 255, 0.15);
+    }
+
+    .practice_header_menu-right_list-sp {
+        display: none;
+    }
+
+    .practice_main {
+        padding-top: 70px;
+        height: 650px;
+    }
+
+    .practice_main_head {
+        background: url("../img/practice_bg_main.jpg") no-repeat center top scroll;
+        background-size: cover;
+    }
+
+    .practice_main_head > h1 {
+        font-size: 48px;
+    }
+
+    .practice_main_head_lead {
+        font-size: 16px;
+    }
+
+    .practice_main_head_button {
+        flex-wrap: nowrap;
+    }
+
+    .practice_main_head_button > a {
+        padding: 22px 0;
+    }
+
+    .practice_main_head_button-write {
+        margin-top: 0px;
+    }
+
+    .practice_main_head_request {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .practice_main_head_request-column {
+        margin-left: 20px;
+        display: inline-block;
+        font-size: 36px;
+    }
+
+    .practice_category {
+        padding: 50px 0;
+    }
+
+    .practice_category_description {
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .practice_category_list {
+        padding-top: 30px;
+    }
+
+    .practice_category_list > li {
+        flex: 1 0;
+    }
+
+    .practice_cooperation {
+        padding: 50px 15px;
+    }
+
+    .practice_cooperation_description {
+        font-size: 13px;
+    }
+
+    .practice_lancers_system {
+        padding: 50px 0;
+        margin: 0 20px;
+    }
+
+    .practice_lancers_system_frame {
+        padding: 0 20px;
+    }
+
+    .practice_lancers_system_something {
+        font-size: 20px;
+    }
+
+    .practice_lancers_system_concept {
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .practice_lancers_system_image_frame {
+        padding: 20px 100px;
+    }
+
+    .practice_lancers_system-button {
+        padding: 20px 110px;
+        max-width: 300px;
+        margin-top: 0;
+    }
+
+    .practice_lancers_merit {
+        padding: 50px 0;
+    }
+
+    .practice_lancers_merit_list {
+        padding: 80px 0 30px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .practice_lancers_merit_list > li {
+        width: 30%;
+    }
+
+    .practice_lancers_merit_image_frame {
+        height: 270px;
+    }
+
+    .practice_lancers_merit_reason {
+        padding: 0;
+    }
+
+    .practice_lancers_merit_description {
+        font-size: 15px;
+    }
+
+    .practice_support {
+        padding: 80px 0 50px;
+        position: relative;
+        z-index: 1;
+        background: white;
+    }
+
+    .practice_support:before {
+        height: 250px;
+        width: 100%;
+        top:0;
+        position: absolute;
+        content: "";
+        z-index: -1;
+        background: url("../img/bg_service.jpg") no-repeat center center scroll;
+        background-size: cover;
+    }
+
+    .practice_support_title > span {
+        font-size: 22px;
+    }
+
+    .practice_support_frame {
+        padding: 50px 5px 30px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .practice_support_list {
+        margin: 0;
+        width: 45%;
+    }
+
+    .practice_support_form {
+        font-size: 26px;
+    }
+
+    .practice_business {
+        padding-top: 120px;
+    }
+
+    .practice_business_contents {
+        width: 48%;
+    }
+
+    .practice_business_text > p {
+        font-size: 18px;
+    }
+}
+
+@media all and (min-width: 920px) {
+    .practice_header_menu-right_list {
+        display: flex;
+    }
+
+    .practice_header_menu-right_list > li {
+        padding: 0 10px;
+    }
+
+    .practice_header_menu-right_list > li:hover {
+        background-color: rgba(17, 174, 255, 0.15);
+    }
+
+    .practice_header_menu-right_list > li > a {
+        height: 50px;
+        font-size: 10px;
+        color: blue;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media all and (min-width: 1201px) {
+    .practice_category_content {
+        max-width: 1200px;
+        margin: auto;
+    }
+    .practice_cooperation {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .practice_lancers_system {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .practice_lancers_merit {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .practice_support_content {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .practice_business_list {
+        max-width: 1200px;
+        margin: auto;
+    }
+
+    .practice_business_contents {
+        width: 32%;
+    }
 }
